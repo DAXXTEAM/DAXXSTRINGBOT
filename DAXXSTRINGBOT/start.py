@@ -23,11 +23,11 @@ async def start(bot: Client, msg: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="🌿𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐓𝐑𝐈𝐍𝐆🌿", callback_data="generate")
+                    InlineKeyboardButton(text="🦋𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐓𝐑𝐈𝐍𝐆🦋", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton(" 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="https://t.me/BWF_MUSIC1"),
-                    InlineKeyboardButton("𝐎𝐟𝐟𝐢𝐜𝐞", url="https://t.me/MUSICBOT_OWNER")
+                    InlineKeyboardButton(" 💒𝐒𝐮𝐩𝐩𝐨𝐫𝐭💒", url="https://t.me/BWF_MUSIC1"),
+                    InlineKeyboardButton("🍷𝐎𝐟𝐟𝐢𝐜𝐞🍷", url="https://t.me/MUSICBOT_OWNER")
                 ]
             ]
         ),
