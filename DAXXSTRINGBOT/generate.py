@@ -34,24 +34,24 @@ import config
 
 
 
-ask_ques = "**» ▷ 𝐂𝐡𝐨𝐨𝐬𝐞 𝐓𝐡𝐞 𝐒𝐭𝐫𝐢𝐧𝐠 𝐖𝐡𝐢𝐜𝐡 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 ✔️ : :**"
+ask_ques = "**» ▷ 𝖢𝐡𝐨𝐨𝐬𝐞 𝖳𝐡𝐞 𝖲𝐭𝐫𝐢𝐧𝐠 𝖶𝐡𝐢𝐜𝐡 𝖸𝐨𝐮 𝖶𝐚𝐧𝐭 ✔️ : :**"
 buttons_ques = [
     [
-        InlineKeyboardButton("𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌", callback_data="pyrogram1"),
-        InlineKeyboardButton("𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 𝐕2", callback_data="pyrogram"),
+        InlineKeyboardButton("𝖯𝖸𝖱𝖮𝖦𝖱𝖠𝖬", callback_data="pyrogram1"),
+        InlineKeyboardButton("𝖯𝖸𝖱𝖮𝖦𝖱𝖠𝖬 𝖵2", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("🍷𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍🍷", callback_data="telethon"),
+        InlineKeyboardButton("𝖳𝖤𝖫𝖤𝖳𝖧𝖮𝖭", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 𝐁𝐎𝐓", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝐁𝐎𝐓", callback_data="telethon_bot"),
+        InlineKeyboardButton("𝖯𝖸𝖱𝖮𝖦𝖱𝖠𝖬 𝖡𝖮𝖳", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("𝖳𝖤𝖫𝖤𝖳𝖧𝖮𝖭 𝖡𝖮𝖳", callback_data="telethon_bot"),
     ],
 ]
 
 gen_button = [
     [
-        InlineKeyboardButton(text=" 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 ", callback_data="generate")
+        InlineKeyboardButton(text=" 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖤 𝖲𝖳𝖱𝖨𝖭𝖦 ", callback_data="generate")
     ]
 ]
 
@@ -65,16 +65,16 @@ async def main(_, msg):
 
 async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: bool = False, is_bot: bool = False):
     if telethon:
-        ty = "𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍"
+        ty = "𝖳𝖤𝖫𝖤𝖳𝖧𝖮𝖭"
     else:
-        ty = "𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌"
+        ty = "𝖯𝖸𝖱𝖮𝖦𝖱𝖠𝖬"
         if not old_pyro:
-            ty += " 𝐕2"
+            ty += " 𝖵2"
     if is_bot:
-        ty += " 𝐁𝐎𝐓"
-    await msg.reply(f"» 𝐓𝐑𝐘𝐈𝐍𝐆 𝐓𝐎 𝐒𝐓𝐀𝐑𝐓 **{ty}** 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐎𝐑...")
+        ty += " 𝖡𝖮𝖳"
+    await msg.reply(f"» 𝖳𝖱𝖸𝖨𝖭𝖦 𝖳𝖮 𝖲𝖳𝖠𝖱𝖳 **{ty}** 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖮𝖱...")
     user_id = msg.chat.id
-    api_id_msg = await bot.ask(user_id, "𝐏𝐋𝐄𝐀𝐒𝐄 𝐒𝐄𝐍𝐃 𝐘𝐎𝐔 **𝐀𝐏𝐈_𝐈𝐃** 𝐓𝐎 𝐏𝐑𝐎𝐂𝐄𝐄𝐃.\n\n𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 /skip 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐁𝐎𝐓 𝐀𝐏𝐈.", filters=filters.text)
+    api_id_msg = await bot.ask(user_id, "𝖯𝖫𝖤𝖠𝖲𝖤 𝖲𝖤𝖭𝖣 𝖸𝖮𝖴 **𝖠𝖯𝖨_𝖨𝖣** 𝖳𝖮 𝖯𝖱𝖮𝖢𝖤𝖤𝖣.\n\n𝖢𝖫𝖨𝖢𝖪 𝖮𝖭 /skip 𝖥𝖮𝖱 𝖴𝖲𝖨𝖭𝖦 𝖡𝖮𝖳 𝖠𝖯𝖨.", filters=filters.text)
     if await cancelled(api_id_msg):
         return
     if api_id_msg.text == "/skip":
@@ -84,14 +84,14 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         try:
             api_id = int(api_id_msg.text)
         except ValueError:
-            await api_id_msg.reply("**𝐀𝐏𝐈_𝐈𝐃** 𝐌𝐔𝐒𝐓 𝐁𝐄 𝐀𝐍 𝐈𝐍𝐓𝐄𝐆𝐄𝐑, 𝐒𝐓𝐀𝐑𝐓 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐀𝐆𝐀𝐈𝐍.", quote=True, reply_markup=InlineKeyboardMarkup(gen_button))
+            await api_id_msg.reply("**𝖠𝖯𝖨_𝖨𝖣** 𝖬𝖴𝖲𝖳 𝖡𝖤 𝖠𝖭 𝖨𝖭𝖳𝖤𝖦𝖤𝖱, 𝖲𝖳𝖠𝖱𝖳 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖨𝖭𝖦 𝖸𝖮𝖴𝖱 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 𝖠𝖦𝖠𝖨𝖭.", quote=True, reply_markup=InlineKeyboardMarkup(gen_button))
             return
-        api_hash_msg = await bot.ask(user_id, "» 𝐍𝐎𝐖 𝐏𝐋𝐄𝐀𝐒𝐄 𝐒𝐄𝐍𝐃 𝐘𝐎𝐔𝐑 **𝐀𝐏𝐈_𝐇𝐀𝐒𝐇** 𝐓𝐎 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄", filters=filters.text)
+        api_hash_msg = await bot.ask(user_id, "» 𝖭𝖮𝖶 𝖯𝖫𝖤𝖠𝖲𝖤 𝖲𝖤𝖭𝖣 𝖸𝖮𝖴𝖱 **𝖠𝖯𝖨_𝖧𝖠𝖲𝖧** 𝖳𝖮 𝖢𝖮𝖭𝖳𝖨𝖭𝖴𝖤", filters=filters.text)
         if await cancelled(api_hash_msg):
             return
         api_hash = api_hash_msg.text
     if not is_bot:
-        t = "» 𝐏𝐋𝐄𝐀𝐒𝐄 𝐒𝐄𝐍𝐃 𝐘𝐎𝐔 **𝐏𝐇𝐎𝐍𝐄 𝐍𝐔𝐌𝐁𝐄𝐑** 𝐖𝐈𝐓𝐇 𝐂𝐎𝐔𝐍𝐓𝐑𝐘 𝐂𝐎𝐃𝐄𝐅𝐎𝐑 𝐖𝐇𝐈𝐂𝐇 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐎 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 \n𝐄𝐗𝐀𝐌𝐏𝐋𝐄 : `+910000000000`'"
+        t = "» 𝖯𝖫𝖤𝖠𝖲𝖤 𝖲𝖤𝖭𝖣 𝖸𝖮𝖴 **𝖯𝖧𝖮𝖭𝖤 𝖭𝖴𝖬𝖡𝖤𝖱** 𝖶𝖨𝖳𝖧 𝖢𝖮𝖴𝖭𝖳𝖱𝖸 𝖢𝖮𝖣𝖤𝖥𝖮𝖱 𝖶𝖧𝖨𝖢𝖧 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖮 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖤 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 \n𝖤𝖷𝖠𝖬𝖯𝖫𝖤 : `+910000000000`'"
     else:
         t = "ᴩʟᴇᴀsᴇ sᴇɴᴅ ʏᴏᴜʀ **ʙᴏᴛ_ᴛᴏᴋᴇɴ** ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\nᴇxᴀᴍᴩʟᴇ : `5432198765:abcdanonymousterabaaplol`'"
     phone_number_msg = await bot.ask(user_id, t, filters=filters.text)
@@ -174,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**𝐓𝐡𝐢𝐬 𝐈𝐬 𝐘𝐨𝐮𝐫 {ty} 𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧** \n\n`{string_session}` \n\n**𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐁𝐲 :** @TEAMDAXX\n🍒 **𝐍𝐎𝐓𝐄 :** 𝐃𝐨𝐧𝐭 𝐒𝐡𝐚𝐫𝐞 𝐖𝐢𝐭𝐡 𝐀𝐧𝐲𝐨𝐧𝐞 𝐁𝐞𝐜𝐚𝐮𝐬𝐞 𝐇𝐞 𝐂𝐚𝐧 𝐇𝐚𝐜𝐤 𝐘𝐨𝐮𝐫 𝐀𝐥𝐥 𝐃𝐚𝐭𝐚. 🍑 𝐀𝐧𝐝 𝐃𝐨𝐧𝐭 𝐅𝐨𝐫𝐠𝐞𝐭 𝐓𝐨 𝐉𝐨𝐢𝐧 @CYBERDAXX & @CYBERDAXXX 🥺"
+    text = f"**𝖳𝐡𝐢𝐬 𝖨𝐬 𝖸𝐨𝐮𝐫 {ty} 𝖲𝐭𝐫𝐢𝐧𝐠 𝖲𝐞𝐬𝐬𝐢𝐨𝐧** \n\n`{string_session}` \n\n**𝖦𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝖡𝐲 :** @TEAMDAXX\n🍒 **𝖭𝖮𝖳𝖤 :** 𝖣𝐨𝐧𝐭 𝖲𝐡𝐚𝐫𝐞 𝖶𝐢𝐭𝐡 𝖠𝐧𝐲𝐨𝐧𝐞 𝖡𝐞𝐜𝐚𝐮𝐬𝐞 𝖧𝐞 𝖢𝐚𝐧 𝖧𝐚𝐜𝐤 𝖸𝐨𝐮𝐫 𝖠𝐥𝐥 𝖣𝐚𝐭𝐚. 🍑 𝖠𝐧𝐝 𝖣𝐨𝐧𝐭 𝖥𝐨𝐫𝐠𝐞𝐭 𝖳𝐨 𝖩𝐨𝐢𝐧 @CYBERDAXX & @CYBERDAXXX 🥺"
     try:
         if not is_bot:
             await client.send_message("me", text)
@@ -183,7 +183,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, "» 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐆𝐫𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐘𝐨𝐮 {} 𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧.\n\n𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 𝐘𝐨𝐮𝐫 𝐒𝐚𝐯𝐞𝐝 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐓𝐨 𝐆𝐞𝐭 𝐈𝐭 ! \n\n𝐀 𝐒𝐭𝐫𝐢𝐧𝐠  𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫 𝐁𝐨𝐭 𝐁𝐲 @CYBERDAXXX ♦".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
+    await bot.send_message(msg.chat.id, "» 𝖲𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝖦𝐫𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝖸𝐨𝐮 {} 𝖲𝐭𝐫𝐢𝐧𝐠 𝖲𝐞𝐬𝐬𝐢𝐨𝐧.\n\n𝖯𝐥𝐞𝐚𝐬𝐞 𝖢𝐡𝐞𝐜𝐤 𝖸𝐨𝐮𝐫 𝖲𝐚𝐯𝐞𝐝 𝖬𝐞𝐬𝐬𝐚𝐠𝐞 𝖳𝐨 𝖦𝐞𝐭 𝖨𝐭 ! \n\n𝖠 𝖲𝐭𝐫𝐢𝐧𝐠  𝖦𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫 𝖡𝐨𝐭 𝖡𝐲 @CYBERDAXXX ♦".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
 
 
 async def cancelled(msg):
@@ -196,7 +196,7 @@ async def cancelled(msg):
     elif "/skip" in msg.text:
         return False
     elif msg.text.startswith("/"):  # Bot Commands
-        await msg.reply("**» 𝐂𝐀𝐍𝐂𝐄𝐋𝐋𝐄𝐃 𝐓𝐇𝐄 𝐎𝐍𝐆𝐎𝐈𝐍𝐆 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐈𝐍𝐆 𝐏𝐑𝐎𝐂𝐄𝐒𝐒 !**", quote=True)
+        await msg.reply("**» 𝖢𝖠𝖭𝖢𝖤𝖫𝖫𝖤𝖣 𝖳𝖧𝖤 𝖮𝖭𝖦𝖮𝖨𝖭𝖦 𝖲𝖳𝖱𝖨𝖭𝖦 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖨𝖭𝖦 𝖯𝖱𝖮𝖢𝖤𝖲𝖲 !**", quote=True)
         return True
     else:
         return False
