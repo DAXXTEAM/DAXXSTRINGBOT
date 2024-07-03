@@ -2,7 +2,7 @@
 import traceback
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
-from SESSIONGEN.generate import generate_session, ask_ques, buttons_ques
+from DAXXSTRINGBOT.generate import generate_session, ask_ques, buttons_ques
 
 ERROR_MESSAGE = "ᴡᴛғ ! sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. \n\n**ᴇʀʀᴏʀ** : {} " \
             "\n\n**ᴩʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @IAM_DAXX**, ɪғ ᴛʜɪs ᴍᴇssᴀɢᴇ " \
