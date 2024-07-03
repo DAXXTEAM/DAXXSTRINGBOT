@@ -6,8 +6,11 @@ from pyromod import listen  # type: ignore
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
 
 logging.basicConfig(
-    level=logging.WARNING, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    level=logging.INFO, 
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
+
+logging.getLogger("pymongo").setLevel(logging.ERROR)
 
 StartTime = time.time()
 app = Client(
